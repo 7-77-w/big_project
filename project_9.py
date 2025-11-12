@@ -13,15 +13,15 @@ income = float(input("Enter your monthly income (only numbers): "))
 total_expenses = []
 
 grocery = Budget("Grocery")
-#car = Budget("Car")
+car = Budget("Car")
 
 grocery.add_expenses()
-#car.add_expenses()
+car.add_expenses()
 
 exp_grocery = grocery.get_expenses()
 total_expenses.append(exp_grocery)
 
-#total_expenses.append(car.get_expenses())
+total_expenses.append(car.get_expenses())
 
 bal = functions.calc_balance(income, sum(total_expenses))
 
